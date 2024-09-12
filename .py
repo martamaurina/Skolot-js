@@ -22,7 +22,7 @@ class sakskolotajs(skolotajs):
 
 
 class vidskolotajs(skolotajs):
-    def __init__(self, prieksv, uzvards_v, hd,  prieksd, hv ):
+    def __init__(self, prieksv, prieksd, uzvards_v, hv , hd, ):
         self.prieksv = prieksv
         self.prieksd = prieksd
         self.hd = hd
@@ -40,16 +40,16 @@ class vidskolotajs(skolotajs):
 def sakums_skolotajs():
     uzvards_s = input("Ievadiet sākumskolas skolotāja uzvārdu: ")
     klase = input("Ievadiet skolotāja klasi: ")
-    stundas = input("Ievadiet skolotaja stundu skaitu: ")
+    stundas = int(input("Ievadiet skolotaja stundu skaitu: "))
     skolotajs=sakskolotajs(uzvards_s, klase, stundas)
     skolotajs.izvade1()
 
 def vidus_skolotajs():
     uzvards_v = input("Ievadiet visusskolas skolotāja uzvārdu: ")
     prieksv = input("Ievadiet pirmo pasniegto priekšmetu: ")
-    hv = input("Ievadiet pirmā priekšmeta stundu skaitu: ")
+    hv = int(input("Ievadiet pirmā priekšmeta stundu skaitu: "))
     prieksd = input("Ievadiet otro pasniegto priekšmetu: ")
-    hd = input("Ievadiet otrā priekšmeta stundu skaitu: ")
+    hd = int(input("Ievadiet otrā priekšmeta stundu skaitu: "))
     skolotajs=vidskolotajs(prieksv, prieksd, uzvards_v, hv, hd)
     skolotajs.izvade2()
 
