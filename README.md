@@ -1,1 +1,1 @@
-# Skolot-js
+# Skolotajs
