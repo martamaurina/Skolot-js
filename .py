@@ -6,10 +6,7 @@ class skolotajs:
         self.tips = None
         self.stundas = stundas
         
-    #def izvade(self):
-  #      pass
-
-
+        
 class sakskolotajs(skolotajs):
     def __init__(self,uzvards_s, klase, stundas):
         self.klase = klase
